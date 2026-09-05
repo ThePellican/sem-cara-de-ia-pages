@@ -3,19 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bake-off — Sem Cara de IA</title>
+  <title>Sem Cara de IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    body { margin:0; font-family: Georgia, serif; background:#E8E3D9; color:#3D2B1F; }
-    main { width:min(720px, calc(100% - 40px)); margin:64px auto; }
-    h1 { color:#2C3E2D; }
-    a { display:block; background:#2C3E2D; color:#E8E3D9; text-decoration:none; padding:16px 18px; margin:12px 0; }
+    :root{--ink:#12110f;--paper:#f4f2ed;--wash:#ebe7df;--mute:#6f6b64;--line:#d7d2c8;--accent:#b44a28}
+    *{box-sizing:border-box;margin:0;padding:0}body{background:var(--paper);color:var(--ink);font-family:Outfit,sans-serif;font-size:17px;line-height:1.55}
+    img{display:block;width:100%}.wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}
+    .kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--accent)}
+    h1,h2,h3{font-family:"Instrument Serif",serif;font-weight:400;letter-spacing:-.03em}
+    .btn{display:inline-flex;background:var(--ink);color:var(--paper);text-decoration:none;padding:14px 22px;font-size:14px}
+    .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+    header.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+    header.nav strong{font-family:"Instrument Serif",serif;font-size:22px;font-weight:400}
+    .hero{padding:88px 0 96px;display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:end}
+    .hero h1{font-size:clamp(40px,6vw,76px);line-height:.96;max-width:13ch}
+    .hero .lead{color:var(--mute);font-size:18px;max-width:36ch;margin:24px 0 32px}
+    .dor{background:var(--ink);color:var(--paper);padding:80px 0}
+    .dor h2{font-size:clamp(28px,4vw,48px);max-width:18ch;margin:12px 0 28px;color:var(--paper)}
+    .dor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+    .dor-grid article{border-top:1px solid rgba(244,242,237,.18);padding-top:18px}
+    .prova{padding:88px 0}.prova h2{font-size:clamp(32px,4.5vw,56px);max-width:16ch;margin:10px 0 16px}
+    .trio,.mosaic{display:grid;gap:8px}.trio{grid-template-columns:repeat(3,1fr)}.mosaic{grid-template-columns:repeat(5,1fr)}
+    .trio img{height:280px;object-fit:cover}.mosaic img{height:168px;object-fit:cover}
+    figcaption{padding:10px 8px 12px;font-size:12px;color:var(--mute)}
+    .veredito{margin-top:14px;font-family:"Instrument Serif",serif;font-style:italic;font-size:20px;color:var(--mute)}
+    .quem-card{display:grid;grid-template-columns:360px 1fr;gap:56px;align-items:center;background:var(--wash);padding:28px;margin:0 0 88px}
+    .quem-card img{height:460px;object-fit:cover;object-position:center top}
+    .quem h2{font-size:clamp(36px,5vw,58px);margin:8px 0 18px}
+    .duas{display:grid;grid-template-columns:1fr 1fr;gap:16px}.oferta{background:#fff;padding:32px;border:1px solid var(--line)}
+    .oferta.destaque{background:var(--ink);color:var(--paper)}.preco{font-family:"Instrument Serif",serif;font-size:34px}
+    .corte{background:var(--wash);padding:64px 0}.faq{padding:72px 0}details{border-bottom:1px solid var(--line);padding:16px 0}
+    footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:13px;color:var(--mute)}
+    @media(max-width:860px){.hero,.dor-grid,.trio,.mosaic,.quem-card,.duas{grid-template-columns:1fr}.mosaic{grid-template-columns:1fr 1fr}}
   </style>
 </head>
 <body>
-  <main>
-    <h1>Bake-off da landing</h1>
-    <a href="01-landing-GRETA.html">01 — Greta</a>
-    <a href="03-landing-GIMENE-1.1.html">03 — Gimene 1.1</a>
-  </main>
-</body>
-</html>
+<div class="wrap">
+<header class="nav"><strong>Sem Cara de IA</strong><span class="kicker">Brand AI System</span></header>
+<section class="hero"><div>
+<p class="kicker">Direção de arte para a era da IA</p>
+<h1>Sua empresa está pagando anúncios para parecer de plástico?</h1>
+<p class="lead">Instalamos um sistema de direção que a inteligência artificial obedece.</p>
+<a class="btn" href="#portas">Quero blindar a identidade</a>
+</div></section></div>
+<section class="dor"><div class="wrap">
+<p class="kicker">O custo do slop</p>
+<h2>O cliente não culpa a ferramenta. Ele conclui que você não se importa com o detalhe.</h2>
+<div class="dor-grid">
+<article><strong>Retrabalho</strong><p>Trinta gerações para aprovar uma.</p></article>
+<article><strong>Mídia queimada</strong><p>Anúncio sintético não gera clique.</p></article>
+<article><strong>Autoridade</strong><p>Reputação comida por post sem critério.</p></article>
+</div></div></section>
+<section class="prova"><div class="wrap">
+<p class="kicker">A prova</p>
+<h2>A diferença não é o modelo. É a moldura.</h2>
+<h3>Sem sistema</h3>
+<div class="trio">
+<figure><img src="https://drive.google.com/thumbnail?id=1tBUIyEnuRJuTjCdTnbsM1WvkhDzq-IlD&sz=w1600" alt="A1"/><figcaption>A1 Render</figcaption></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1h2Uone22YOz93qnJPrk-sWG3KSR_A93o&sz=w1600" alt="A2"/><figcaption>A2 Indie</figcaption></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=18wgX3UW_vNcSNcwZ3b7g1EM9IrCv1GpJ&sz=w1600" alt="A3"/><figcaption>A3 Vetor</figcaption></figure>
+</div>
+<h3>Com sistema</h3>
+<div class="mosaic">
+<figure><img src="https://drive.google.com/thumbnail?id=1MAY5wfC2_eBxX90gEH7kaVV1Gst7mF1f&sz=w1200" alt="B1"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1YNavSbwoG0v_Vfy10_ZzDpGfyB7eUSnC&sz=w1200" alt="B2"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1tKGX5fcTReadodK__K4uN0YeuJ_IASUs&sz=w1200" alt="B3"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1nPZFCW9z_MAj-w7eThbVjbVhVj_0FamO&sz=w1200" alt="B4"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1MCZiuhFcrQ6DJ0EbXPLVBoEc15Q5nGIc&sz=w1200" alt="B5"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1sAZU55RnA6OT1clsvo95uRhIFmqb9x1w&sz=w1200" alt="B6"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1tRWuusXmlsCgkPXCR6qCoXnk5-a9DCvd&sz=w1200" alt="B7"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1XixsFvwKWAT74Z5GyNhlNJsG0lpePjNp&sz=w1200" alt="B8"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1CllrF9c0nTWrCMpDwez0ysaYW0USw6V4&sz=w1200" alt="B9"/></figure>
+<figure><img src="https://drive.google.com/thumbnail?id=1nfLe0Un9bH91HOxz3-VnP8EAZVirnSzR&sz=w1200" alt="B10"/></figure>
+</div>
+<p class="veredito">Dez situações. Uma decisão.</p>
+</div></section>
+<section id="quem"><div class="wrap"><article class="quem-card">
+<img src="https://drive.google.com/thumbnail?id=1HGh4iTnqhgSjGx_jopEnj3gDK-LGTUlC&sz=w1400" alt="Luis Pellicano"/>
+<div><p class="kicker">Quem conduz</p><h2>Luis Pellicano</h2>
+<p>Diretor de criação. Formação em Comunicação Social. Fotografia, cinema e direção de arte.</p>
+<p>A máquina entrega velocidade. Eu instalo o sistema para ela obedecer a identidade, não a média.</p>
+</div></article></div></section>
+<section class="portas" id="portas"><div class="wrap"><h2>Duas portas</h2><div class="duas">
+<article class="oferta"><h3>Auditoria</h3><p class="preco">R$ 790</p></article>
+<article class="oferta destaque"><h3>Consultoria</h3><p class="preco">R$ 5.000 a R$ 12.000</p></article>
+</div></div></section>
+<footer><div class="wrap">Sem Cara de IA · Luis Pellicano</div></footer>
+</body></html>
